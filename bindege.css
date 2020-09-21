@@ -1,0 +1,359 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size:10px;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration:none !important;
+
+}
+p{
+     word-break: break-all;
+     word-wrap: break-word;
+     white-space: normal;
+}
+
+/*header starts here*/
+.nav-link-clr ul li a{
+     color:rgb(255, 255, 255) !important;
+}
+.nav-link-clr ul li a:hover{
+    color:rgb(214,102,0) !important;
+}
+#head-links{
+    background-image:url(Banner.gif);
+    background-size:cover;
+    background-position:top center;
+    position:relative;
+    z-index:1;
+    margin-bottom:0;
+    background-repeat:no-repeat;
+    
+}
+
+#head-links::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color: black;
+    opacity:0.7;
+    z-index:-1;
+}
+#head-links .head-links{
+    max-width:1200px;
+    margin:0 auto;
+    padding:50px 60px;
+    justify-content:flex-start;
+}
+#head-links h1{
+    display:block;
+    width:fit-content;
+    font-size:4rem;
+    position:relative;
+    color:rgb(255, 255, 255);
+    color:transparent;
+    animation:text_reveal 0.5s ease forwards;
+    animation-delay:1.5s;
+}
+
+#head-links h2 span{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color:rgb(255,0,0);
+    animation:text_reveal_box 1s ease;
+    animation-delay:1s;
+}
+#head-links h2{
+    display:block;
+    width:fit-content;
+    font-size:1.8rem;
+    position:relative;
+    color:rgb(255, 255, 255);
+    color:transparent;
+    animation:text_reveal 0.5s ease forwards;
+    animation-delay:1.5s;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+}
+#head-links p{
+    display:block;
+    width:fit-content;
+    position:relative;
+    color:rgba(242, 242, 242,0.6);
+    
+}
+ .logo-axit{
+    color:rgb(214,102,0)!important;
+    letter-spacing:1px;
+    font-weight:initial;
+}
+.ax-logo{
+    color:rgb(255, 255, 255)!important;
+    font-size:32px;
+    padding: 15px 45px;
+}
+#head-links .cta{
+    display:inline-block;
+    padding:10px 25px;
+    color:rgb(255, 255, 255);
+    background-color:transparent;
+    border:2px solid rgb(255, 255, 255);
+    font-size:2rem;
+    text-transform:normal;
+    letter-spacing: 0.1rem;
+    margin-top:30px;
+    transition:0.3s ease background-color;
+    transition-property:background-color,color;
+    border-radius:4px;
+}
+#head-links .cta:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(214,102,0);
+}
+
+#head-links h1:nth-child(1){
+    animation-delay:1s;
+}
+#head-links h1:nth-child(2){
+    animation:text_reveal_name 0.5s ease forwards;
+    animation-delay:2s;
+}
+/*header ends here*/
+
+/*header animation starts here*/
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width:0;
+        left:100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color:rgb(255, 255, 255);
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color:rgb(255,0,0);
+        font-weight:500;
+    }
+}
+
+/*header animation starts here*/
+
+/*socialmedia icons starts here*/
+.social-media-para{
+    padding:10px 42px;
+}
+
+.social-media-para .second-social-icons span{
+    display: inline-block;
+    width: 75px;
+    height: 50px;
+    padding: 5px;
+    color: rgb(192,192,192);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-media-para .second-social-icons span a{
+    display:inline-block;
+    color:rgb(192,192,192);
+}
+.social-media-para .second-social-icons{
+    padding:20px 0;
+}
+.social-media-para h4{
+    font-weight:bold;
+}
+.social-media-para p{
+    color:rgb(192,192,192);
+}
+
+/*socialmedia icons ends here*/
+
+/*tab section and image starts here*/
+.tab-list{
+    width:100%;
+    height:100%;
+    
+}
+.tab-list-para{
+    padding:50px 20px;
+    background:rgba(242, 242, 242,0.6);
+}
+.tab-list-para .tab-para h2{
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.tab-list-para .tab-para p{
+    color:rgb(192,192,192);
+    padding:10px 0;
+}
+.tab-list ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    max-width: 135px;
+  }
+  
+  .tab-list li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 45px 16px;
+    text-decoration: none;
+    background:black;
+  }
+  
+  .tab-list li {
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .tab-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .tab-list li a.active {
+    background-color: rgb(214,102,0);
+    color: rgb(255, 255, 255);
+  }
+  
+  .tab-list li a:hover:not(.active) {
+    background-color:rgb(214,102,0);
+    color: rgb(255, 255, 255);
+  }
+  .tab-para .cta{
+    display:inline-block;
+    padding:10px 25px;
+    color:rgb(192,192,192);
+    background-color:rgb(214,102,0);
+    border:2px solid rgb(214,102,0);
+    font-size:2rem;
+    text-transform:normal;
+    letter-spacing: 0.1rem;
+    margin-top:30px;
+    transition:0.3s ease background-color;
+    transition-property:background-color,color;
+    border-radius:4px;
+  }
+  .tab-para .cta:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(214,102,0);
+    }
+.tower-pic img{
+    max-width:100%;
+    margin:0 auto;
+    height:auto;
+    padding:60px 0;
+    display:block;
+}
+.tower-pic{
+    width:100%;
+    height:100%;
+}
+
+/*tab section and image ends here*/
+
+/*hillrock  and check mart data  starts here*/
+
+
+.hillrock{
+    width:100%;
+    height:100%;
+}
+.hillrock{
+    max-width: 350px;
+    margin: 0 auto;
+    height: auto;
+    padding: 60px 0;
+    display: block;
+    width: 100%;
+    
+}
+.hillrock img{
+   -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
+   -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
+}
+
+.hill-list-section{
+    padding:32px 15px;
+    min-height:500px;
+    /*background-color:rgb(255,0,0);*/
+}
+.hill-list-section  .sub-list-sec{
+    padding:15px 30px;
+}
+/*.hill-list-section  .para-bdy{
+    padding-left:10px;
+}*/
+.hill-list-section p{
+    color:rgb(192,192,192);
+}
+.hill-list-section .sub-list-one{
+    padding:10px 10px;
+}
+.hill-list-section .sub-list-one hr{
+    max-width:30px;
+    width:100%;
+    border:1px solid rgb(214,102,0);
+}
+.hill-list-section .sub-list-one h4{
+    font-weight:bold;
+}
+.hill-list-section .sub-list-sec h5{
+    font-weight:bold;
+    padding:5px 0;
+}
+
+/*hillrock  and check mart data ends here*/
+
+/*footer social media icons and copy right starts here*/
+
+footer{
+    background-color:black;
+    padding:20px 0;
+    color:rgb(221,221,221);
+
+}
+footer .footer-social-icons span{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    color: rgb(221,221,221);
+
+}
+footer .footer-social-icons span a{
+    display:inline-block;
+    color:rgb(192,192,192);
+}
+
+/*footer social media icons and copy right ends here*/
+
+hr{
+    max-width:30px;
+    width:100%;
+}
+
+  
